@@ -1,0 +1,58 @@
+# See /usr/share/postfix/main.cf.dist for a commented, more complete version
+
+
+# Debian specific:  Specifying a file name will cause the first
+# line of that file to be used as the name.  The Debian default
+# is /etc/mailname.
+#myorigin = /etc/mailname
+myhostname = tbp.seas.ucla.edu
+mydomain = tbp.seas.ucla.edu
+myorigin = $myhostname
+
+smtpd_banner = $myhostname ESMTP $mail_name
+biff = no
+
+relayhost =
+
+# appending .domain is the MUA's job.
+append_dot_mydomain = no
+
+virtual_alias_domains = tbp.seas.ucla.edu
+virtual_alias_maps = hash:/etc/postfix/virtual
+
+# Restriction classes
+smtpd_restriction_classes = tbponly, houseleaders, tbpandhouseleaders
+
+tbponly =
+	check_sender_access hash:/etc/postfix/restrict_classes/tbponly,
+	reject
+
+houseleaders =
+	check_sender_access hash:/etc/postfix/restrict_classes/houseleaders,
+	reject
+
+tbpandhouseleaders = 
+	check_sender_access hash:/etc/postfix/restrict_classes/tbponly,
+	check_sender_access hash:/etc/postfix/restrict_classes/houseleaders,
+	reject
+
+smtpd_recipient_restrictions =
+	check_sender_access hash:/etc/postfix/access_restrictions,
+	permit_sasl_authenticated,
+	reject_unauth_destination
+# Uncomment the next line to generate "delayed mail" warnings
+#delay_warning_time = 4h
+
+readme_directory = no
+
+
+# Added: SMTP AUTH
+broken_sasl_auth_clients = yes
+smtpd_sasl_auth_enable = yes 
+smtpd_sasl_local_domain = $myhostname
+smtpd_sasl_path = private/auth
+smtpd_sasl_security_options = noanonymous
+smtpd_sasl_type = dovecot
+
+# Compatibility Mode
+compatibility_level = 2

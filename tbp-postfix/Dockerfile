@@ -1,0 +1,11 @@
+FROM alpine
+
+EXPOSE 25
+
+RUN apk update
+RUN apk add postfix
+
+COPY config /etc/postfix
+COPY init.sh /etc/init.sh
+
+CMD ["sh", "/etc/init.sh"]
