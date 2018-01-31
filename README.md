@@ -33,5 +33,7 @@ First, postfix runs chrooted into `/var/spool/postfix`, meaning that copying fil
 
 Second, the allowed SASL mechanisms are `plain login digest-md5 ntlm cram-md5`. This is carried over from the previous implementation, and may be edited within dovecot's `config/conf.d/10-auth.conf`. Because both `digest-md5` and `cram-md5` are allowed, passwords are stored in plaintext within dovecot's `users` file. All users currently are authenticated with the same password (but we all currently authenticate under president anyways).
 
+Also, postfix currently runs with `compatibility_level = 2`. This means that the [backwards compatibility safety net](http://www.postfix.org/COMPATIBILITY_README.html) is disabled. If legacy configurations need to be used, either make the relevant changes described in the link or set the compatibility level to reenable the net.
+
 To my understanding, the server currently runs under unsecured connections, so only port 25 is used and neccessary. More ports may be added if need be. 
   
