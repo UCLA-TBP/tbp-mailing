@@ -9,3 +9,6 @@ stop:
   
 clean: stop
 	docker-compose rm
+	
+clear:
+	docker-compose down -v
