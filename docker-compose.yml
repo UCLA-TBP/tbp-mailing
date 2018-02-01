@@ -2,8 +2,6 @@ version: "3"
 services:
   dovecot:
     build: ./tbp-dovecot
-    depends_on:
-     - postfix
     image: tbp/dovecot
     restart: always
     stdin_open: true
