@@ -9,6 +9,8 @@ These components run in containers of Alpine Linux. Interacting with a container
   
 ## Setup and Running
 
+Before building TBP Mailing with the Makefile, you may wish to take a look at the configurations of the individual components. See the Config section for more details, and the Notes section for specific details about the current configs. Pay attention to the Notes section on authentication if you wish to set that up, as the 
+
 TBP Mailing comes with a Makefile with the following commands:
 
   * `make build`: Builds the relevant containers
@@ -21,7 +23,7 @@ TBP Mailing comes with a Makefile with the following commands:
 
 TBP Mailing is sorted into folders for its individual components and is managed by a `docker-compose.yml` in the main directory. 
 
-Each component folder contains a config folder, a default folder, and a Dockerfile. The config folder contains the current configurations of the component, and may be modified as need be. The default folder contains the configurations for a default install of the component (may not be completely up to date, but should be reasonably close). 
+Each component folder contains a config folder, a dist folder, and a Dockerfile. The config folder contains the current configurations of the component, and may be modified as need be. The dist folder contains the configurations for a default install of the component from its original source (may not be completely up to date, but should be reasonably close). 
 
 In order to configure TBP Mailing, modifications may be needed not only to the config folders, but also to the Dockerfile and the `docker-compose.yml` (especially if new ports or volumes are needed).
 
@@ -31,9 +33,11 @@ Because this server does not use the default configuration, various quirks are i
 
 First, postfix runs chrooted into `/var/spool/postfix`, meaning that copying files into this directory may be necessary to provide postfix with all the information that it needs. Currently, postfix requires various files from `/etc`. If modifications to these files are made, modifications to the files in the chroot directory should be made as well. Currently, postfix runs chrooted to keep security configurations from the original TBP mailing server. If one wishes to run postfix without chroot, changes should be made to `master.cf`.
 
-Second, the allowed SASL mechanisms are `plain login digest-md5 ntlm cram-md5`. This is carried over from the previous implementation, and may be edited within dovecot's `config/conf.d/10-auth.conf`. Because both `digest-md5` and `cram-md5` are allowed, passwords are stored in plaintext within dovecot's `users` file. All users currently are authenticated with the same password (but we all currently authenticate under president anyways).
+Second, the allowed SASL mechanisms are `plain login digest-md5 ntlm cram-md5`. This is carried over from the previous implementation, and may be edited within dovecot's `config/conf.d/10-auth.conf`. Because both `digest-md5` and `cram-md5` are allowed, passwords are stored in plaintext within dovecot's `users` file (the location and name of this file may also be altered within `config/conf.d/10-auth.conf`). All users currently are authenticated with the same password (but we all currently authenticate under president anyways). Entries within the users file follow the format of `example@example.com:{PLAIN}passwd`, where PLAIN is the password storage scheme.
 
-Also, postfix currently runs with `compatibility_level = 2`. This means that the [backwards compatibility safety net](http://www.postfix.org/COMPATIBILITY_README.html) is disabled. If legacy configurations need to be used, either make the relevant changes described in the link or set the compatibility level to reenable the net.
+Note that the repo does not store a `users` file within `dovecot/config` to avoid committing passwords to git. Instead, an empty `users.dist` file is provided. In order for authentication to work correctly, rename the `users.dist` file to `users` and add the relevant entries.
+
+Third, postfix currently runs with `compatibility_level = 2`. This means that the [backwards compatibility safety net](http://www.postfix.org/COMPATIBILITY_README.html) is disabled. If legacy configurations need to be used, either make the relevant changes described in the link or set the compatibility level to reenable the net.
 
 To my understanding, the server currently runs under unsecured connections, so only port 25 is used and neccessary. More ports may be added if need be. 
   
