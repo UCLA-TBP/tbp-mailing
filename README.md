@@ -9,7 +9,7 @@ These components run in containers of Alpine Linux. Interacting with a container
   
 ## Setup and Running
 
-Before building TBP Mailing with the Makefile, you may wish to take a look at the configurations of the individual components. See the Config section for more details, and the Notes section for specific details about the current configs. Pay attention to the Notes section on authentication if you wish to set that up, as the 
+Before building TBP Mailing with the Makefile, you may wish to take a look at the configurations of the individual components. See the Config section for more details, and the Notes section for specific details about the current configs. Pay attention to the Notes section on authentication if you wish to set that up, as the default set up has no valid entries.
 
 TBP Mailing comes with a Makefile with the following commands:
 
