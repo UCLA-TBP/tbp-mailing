@@ -18,6 +18,7 @@ TBP Mailing comes with a Makefile with the following commands:
   * `make stop`: Stops the relevant containers
   * `make clean`: Stops and removes the relevant containers
   * `make clear`: Removes the relevant containers, networks, and volumes (stored mail and logs)
+  * `make update_email_aliases`: Updates the virtual email aliases used by postfix (the containers need to be restarted for this to take effect; postmapping and reloading postfix within the container could also work)
   
 ## Config
 

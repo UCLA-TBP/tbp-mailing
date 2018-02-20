@@ -1,3 +1,5 @@
+mkfile_dir := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
+
 build:
 	docker-compose build
 
@@ -12,3 +14,6 @@ clean: stop
 	
 clear:
 	docker-compose down -v
+
+update_email_aliases:
+	python $(mkfile_dir)tbp-postfix/update_email_aliases.py
