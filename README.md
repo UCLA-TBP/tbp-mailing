@@ -17,7 +17,7 @@ TBP Mailing comes with a Makefile with the following commands:
   * `make run`: Starts the relevant containers
   * `make stop`: Stops the relevant containers
   * `make clean`: Stops and removes the relevant containers
-  * `make clear`: Removes the relevant containers, networks, and volumes (stored mail)
+  * `make clear`: Removes the relevant containers, networks, and volumes (stored mail and logs)
   
 ## Config
 
@@ -26,6 +26,10 @@ TBP Mailing is sorted into folders for its individual components and is managed 
 Each component folder contains a config folder, a dist folder, and a Dockerfile. The config folder contains the current configurations of the component, and may be modified as need be. The dist folder contains the configurations for a default install of the component from its original source (may not be completely up to date, but should be reasonably close). 
 
 In order to configure TBP Mailing, modifications may be needed not only to the config folders, but also to the Dockerfile and the `docker-compose.yml` (especially if new ports or volumes are needed).
+
+## Logging
+
+TBP Mailing uses syslog to log for both postfix and docker, with the logs stored within their respective containers. Logs are contained within /var/log. Postfix currently contains logs for the levels crit, err, warning, info, and debug. Docker currently contains logs for the levels crit, err, warning, and info. These logs are stored within volumes, and you may wish to clear them periodically.
 
 ## Notes
 
@@ -39,5 +43,5 @@ Note that the repo does not store a `users` file within `dovecot/config` to avoi
 
 Third, postfix currently runs with `compatibility_level = 2`. This means that the [backwards compatibility safety net](http://www.postfix.org/COMPATIBILITY_README.html) is disabled. If legacy configurations need to be used, either make the relevant changes described in the link or set the compatibility level to reenable the net.
 
-To my understanding, the server currently runs under unsecured connections, so only port 25 is used and neccessary. More ports may be added if need be. 
+The server currently runs under unsecured connections, so only port 25 is used and neccessary. More ports may be added if need be. 
   

@@ -21,7 +21,7 @@ ftp-bugs:	root
 postfix:	root
 
 # Put your local aliases here.
-mak
+
 # Well-known aliases
 manager:	root
 dumper:		root

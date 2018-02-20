@@ -4,5 +4,6 @@ RUN apk update
 RUN apk add dovecot
 
 COPY config /etc/dovecot
+COPY init.sh /etc/init.sh
 
-CMD ["sh", "-c", "dovecot; sh"]
+CMD ["sh", "/etc/init.sh"]
