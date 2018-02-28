@@ -32,6 +32,12 @@ In order to configure TBP Mailing, modifications may be needed not only to the c
 
 TBP Mailing uses syslog to log for both postfix and docker, with the logs stored within their respective containers. Logs are contained within /var/log. Postfix currently contains logs for the levels crit, err, warning, info, and debug. Docker currently contains logs for the levels crit, err, warning, and info. These logs are stored within volumes, and you may wish to clear them periodically.
 
+## Virtual Mailboxes
+
+Mail can be delivered locally by altering the `vmailbox` file of postfix (which is postmapped on the start of the container). Within this file, mail sent to the address on the left side is sent to the mailbox name on the right side. Mail is routed to the virtual mailbox address through virtual aliases (aka the `virtual` file). Updating the email aliases with the make command or the `update_email_aliases` script should be enough to make this work. 
+
+Mail is currently delivered to `/var/mail/vhosts/{mailbox name}`. This location can be changed in `main.cf`. 
+
 ## Notes
 
 Because this server does not use the default configuration, various quirks are important to keep in mind. A lot of these quirks are due to legacy considerations and carryover; these may change if these configurations are deemed undesirable.

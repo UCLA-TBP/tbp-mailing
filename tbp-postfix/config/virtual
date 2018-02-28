@@ -1,15 +1,15 @@
 # DO NOT CHANGE THIS FILE. MAKE CHANGES TO /etc/postfix/virtual_static INSTEAD.
 jai.srivastav@tbp.seas.ucla.edu	jais@ucla.edu
 alexander@tbp.seas.ucla.edu	alex44lim@gmail.com
-projects@tbp.seas.ucla.edu	jacobgswing@gmail.com, kyle.wong975@gmail.com, president@tbp.seas.ucla.edu, thisishaoyu@gmail.com, ucla.tbp@gmail.com
+projects@tbp.seas.ucla.edu	jacobgswing@gmail.com, kyle.wong975@gmail.com, president@tbp.seas.ucla.edu, thisishaoyu@gmail.com, ucla.tbp@gmail.com, projects@vmailbox
 carter@tbp.seas.ucla.edu	carter.wu@ucla.edu
 carlos.leal@tbp.seas.ucla.edu	carlos.leal@ucla.edu
 willie@tbp.seas.ucla.edu	willie.wu17@gmail.com
 inga.hwang@tbp.seas.ucla.edu	imh2015@g.ucla.edu
 vincent@tbp.seas.ucla.edu	vfhcheung@gmail.com, vircheng@gmail.com
 christopher@tbp.seas.ucla.edu	christopher.chen@aut.com
-liaison@tbp.seas.ucla.edu	hung.mandy.15@gmail.com, jcherian@g.ucla.edu, johnny@tbp.seas.ucla.edu, kohkj8895@gmail.com, mhw2012@live.com, oozgur217@gmail.com, president@tbp.seas.ucla.edu, ramyasatish1997@gmail.com, sahilmgandhi@gmail.com, shalinidangi@ucla.edu, ucla.tbp@gmail.com
-vp@tbp.seas.ucla.edu	marktai@ucla.edu, president@tbp.seas.ucla.edu, ucla.tbp@gmail.com, yoonsung14@ucla.edu
+liaison@tbp.seas.ucla.edu	hung.mandy.15@gmail.com, jcherian@g.ucla.edu, johnny@tbp.seas.ucla.edu, kohkj8895@gmail.com, mhw2012@live.com, oozgur217@gmail.com, president@tbp.seas.ucla.edu, ramyasatish1997@gmail.com, sahilmgandhi@gmail.com, shalinidangi@ucla.edu, ucla.tbp@gmail.com, liaison@vmailbox
+vp@tbp.seas.ucla.edu	marktai@ucla.edu, president@tbp.seas.ucla.edu, ucla.tbp@gmail.com, yoonsung14@ucla.edu, vp@vmailbox
 jahan@tbp.seas.ucla.edu	jcherian@g.ucla.edu
 board@tbp.seas.ucla.edu	president@tbp.seas.ucla.edu vp@tbp.seas.ucla.edu, ucla.tbp@gmail.com
 khaled.wong@tbp.seas.ucla.edu	kyle.wong975@gmail.com
@@ -26,9 +26,9 @@ victor@tbp.seas.ucla.edu	victorxue007@gmail.com
 pi.candidates@tbp.seas.ucla.edu	pi.leaders@tbp.seas.ucla.edu, president@tbp.seas.ucla.edu, ucla.tbp@gmail.com
 patrick.minassians@tbp.seas.ucla.edu	15minassiansp@gmail.com
 wgoodin@tbp.seas.ucla.edu	ucla.tbp@gmail.com, william.r.goodin@gmail.com
-publicity@tbp.seas.ucla.edu	johnny@tbp.seas.ucla.edu, peaceful.thorn@gmail.com, president@tbp.seas.ucla.edu, sohni.thakkar@gmail.com, tbp.publicity@gmail.com, ucla.tbp@gmail.com, vfhcheung@gmail.com
+publicity@tbp.seas.ucla.edu	johnny@tbp.seas.ucla.edu, peaceful.thorn@gmail.com, president@tbp.seas.ucla.edu, sohni.thakkar@gmail.com, tbp.publicity@gmail.com, ucla.tbp@gmail.com, vfhcheung@gmail.com, publicity@vmailbox
 sidney.crossley@tbp.seas.ucla.edu	treycrossley@gmail.com
-comm.serv@tbp.seas.ucla.edu	15minassiansp@gmail.com, davidcarrillo1217@gmail.com, johnny@tbp.seas.ucla.edu, president@tbp.seas.ucla.edu, ucla.tbp@gmail.com
+comm.serv@tbp.seas.ucla.edu	15minassiansp@gmail.com, davidcarrillo1217@gmail.com, johnny@tbp.seas.ucla.edu, president@tbp.seas.ucla.edu, ucla.tbp@gmail.com, comm.serv@vmailbox
 jingjing.nie@tbp.seas.ucla.edu	niejingjing@g.ucla.edu
 maxwell@tbp.seas.ucla.edu	mhw2012@live.com
 dair@tbp.seas.ucla.edu	sagdied744@las.ch
@@ -40,7 +40,7 @@ allan@tbp.seas.ucla.edu	allanchen@ucla.edu
 khaled@tbp.seas.ucla.edu	kyle.wong975@gmail.com
 tbp_officers@tbp.seas.ucla.edu	officers@tbp.seas.ucla.edu, ucla.tbp@gmail.com
 sohni.thakkar@tbp.seas.ucla.edu	sohni.thakkar@gmail.com
-treasurer@tbp.seas.ucla.edu	ckenny9739@ucla.edu, jais@ucla.edu, president@tbp.seas.ucla.edu, ucla.tbp@gmail.com
+treasurer@tbp.seas.ucla.edu	ckenny9739@ucla.edu, jais@ucla.edu, president@tbp.seas.ucla.edu, ucla.tbp@gmail.com, treasurer@vmailbox
 patrick@tbp.seas.ucla.edu	15minassiansp@gmail.com
 william.choi@tbp.seas.ucla.edu	williamkawaichoi@yahoo.com
 yunjing@tbp.seas.ucla.edu	jenniezheng321@gmail.com
@@ -49,9 +49,9 @@ cal@tbp.seas.ucla.edu	thisishaoyu@gmail.com
 sahil@tbp.seas.ucla.edu	sahilmgandhi@gmail.com
 trey@tbp.seas.ucla.edu	treycrossley@gmail.com
 mentorship@tbp.seas.ucla.edu	kohkj8895@gmail.com, president@tbp.seas.ucla.edu, ucla.tbp@gmail.com
-educ.outreach@tbp.seas.ucla.edu	dgfong@sbcglobal.net, hajimehayano@gmail.com, mark@tbp.seas.ucla.edu, president@tbp.seas.ucla.edu, ucla.tbp@gmail.com, whurley@g.ucla.edu
+educ.outreach@tbp.seas.ucla.edu	dgfong@sbcglobal.net, hajimehayano@gmail.com, mark@tbp.seas.ucla.edu, president@tbp.seas.ucla.edu, ucla.tbp@gmail.com, whurley@g.ucla.edu, educ.outreach@vmailbox
 dist.actives@tbp.seas.ucla.edu	15minassiansp@gmail.com, Dabraham@g.ucla.edu, allanchen@ucla.edu, amangosong@ucla.edu, andrewnamgoong105@gmail.com, andrewytan1@gmail.com, brianclui@g.ucla.edu, carlos.leal@ucla.edu, christopher.chen@aut.com, ckenny9739@ucla.edu, dgfong@sbcglobal.net, dongwei@ucla.edu, erickongl@gmail.com, hanqiu8@gmail.com, jasonyee@g.ucla.edu, jgorder@ucla.edu, jonathan.chu96@gmail.com, kohkj8895@gmail.com, ktadimeti@ucla.edu, kushalnimkar@gmail.com, marktai@ucla.edu, mchen2918@gmail.com, niejingjing@g.ucla.edu, nzhang389@gmail.com, officers@tbp.seas.ucla.edu wgoodin@tbp.seas.ucla.edu, oozgur217@gmail.com, peaceful.thorn@gmail.com, robert.dyro@gmail.com, sagdied744@las.ch, shalinidangi@ucla.edu, simi.r2012@gmail.com, treycrossley@gmail.com, ucla.tbp@gmail.com, vircheng@gmail.com, willie.wu17@gmail.com, yashess@ucla.edu, yoonsung14@ucla.edu, zubinkmishra@yahoo.com
-webmaster@tbp.seas.ucla.edu	allanchen@ucla.edu, carlos.leal@ucla.edu, carter.wu@ucla.edu, derekchu53789@gmail.com, hanqiu8@gmail.com, jenniezheng321@gmail.com, tbp.webmaster@marktai.com, ucla.tbp@gmail.com, vircheng@gmail.com
+webmaster@tbp.seas.ucla.edu	allanchen@ucla.edu, carlos.leal@ucla.edu, carter.wu@ucla.edu, derekchu53789@gmail.com, hanqiu8@gmail.com, jenniezheng321@gmail.com, tbp.webmaster@marktai.com, ucla.tbp@gmail.com, vircheng@gmail.com, webmaster@vmailbox
 william.hurley@tbp.seas.ucla.edu	whurley@g.ucla.edu
 michael@tbp.seas.ucla.edu	mchen2918@gmail.com
 andrew.namgoong@tbp.seas.ucla.edu	andrewnamgoong105@gmail.com
@@ -64,14 +64,14 @@ kyle@tbp.seas.ucla.edu	kyle.wong975@gmail.com
 mandy.hung@tbp.seas.ucla.edu	hung.mandy.15@gmail.com
 xiang@tbp.seas.ucla.edu	allanchen@ucla.edu
 alex@tbp.seas.ucla.edu	alex44lim@gmail.com
-officers@tbp.seas.ucla.edu	15minassiansp@gmail.com, U6.30cl@gmail.com, aabraganza@gmail.com, alex44lim@gmail.com, allanchen@ucla.edu, amangosong@ucla.edu, andrewnamgoong105@gmail.com, bhuvan.vinya@gmail.com, brianclui@g.ucla.edu, carlos.leal@ucla.edu, carter.wu@ucla.edu, christopher.chen@aut.com, ckenny9739@ucla.edu, connorhum@ucla.edu, davidcarrillo1217@gmail.com, derekchu53789@gmail.com, dgfong@sbcglobal.net, hajimehayano@gmail.com, hanqiu8@gmail.com, harshsrivastav0@gmail.com, hung.mandy.15@gmail.com, imh2015@g.ucla.edu, jacobgswing@gmail.com, jais@ucla.edu, jasonyee@g.ucla.edu, jcherian@g.ucla.edu, jenniezheng321@gmail.com, jgorder@ucla.edu, kev.kev.lian@gmail.com, kohkj8895@gmail.com, kushalnimkar@gmail.com, kyle.wong975@gmail.com, marktai@ucla.edu, mchen2918@gmail.com, mhw2012@live.com, mmaroli@ucla.edu, mzhu2.4@gmail.com, niejingjing@g.ucla.edu, oozgur217@gmail.com, peaceful.thorn@gmail.com, ramyasatish1997@gmail.com, raykwan@ucla.edu, sagdied744@las.ch, sahilmgandhi@gmail.com, shalinidangi@ucla.edu, simi.r2012@gmail.com, sohni.thakkar@gmail.com, tbp.webmaster@marktai.com wgoodin@tbp.seas.ucla.edu, thisishaoyu@gmail.com, treycrossley@gmail.com, ucla.tbp@gmail.com, vfhcheung@gmail.com, victorxue007@gmail.com, vircheng@gmail.com, vitoiv4@gmail.com, whurley@g.ucla.edu, williamkawaichoi@yahoo.com, willie.wu17@gmail.com, yoonsung14@ucla.edu
+officers@tbp.seas.ucla.edu	15minassiansp@gmail.com, U6.30cl@gmail.com, aabraganza@gmail.com, alex44lim@gmail.com, allanchen@ucla.edu, amangosong@ucla.edu, andrewnamgoong105@gmail.com, bhuvan.vinya@gmail.com, brianclui@g.ucla.edu, carlos.leal@ucla.edu, carter.wu@ucla.edu, christopher.chen@aut.com, ckenny9739@ucla.edu, connorhum@ucla.edu, davidcarrillo1217@gmail.com, derekchu53789@gmail.com, dgfong@sbcglobal.net, hajimehayano@gmail.com, hanqiu8@gmail.com, harshsrivastav0@gmail.com, hung.mandy.15@gmail.com, imh2015@g.ucla.edu, jacobgswing@gmail.com, jais@ucla.edu, jasonyee@g.ucla.edu, jcherian@g.ucla.edu, jenniezheng321@gmail.com, jgorder@ucla.edu, kev.kev.lian@gmail.com, kohkj8895@gmail.com, kushalnimkar@gmail.com, kyle.wong975@gmail.com, marktai@ucla.edu, mchen2918@gmail.com, mhw2012@live.com, mmaroli@ucla.edu, mzhu2.4@gmail.com, niejingjing@g.ucla.edu, oozgur217@gmail.com, peaceful.thorn@gmail.com, ramyasatish1997@gmail.com, raykwan@ucla.edu, sagdied744@las.ch, sahilmgandhi@gmail.com, shalinidangi@ucla.edu, simi.r2012@gmail.com, sohni.thakkar@gmail.com, tbp.webmaster@marktai.com wgoodin@tbp.seas.ucla.edu, thisishaoyu@gmail.com, treycrossley@gmail.com, ucla.tbp@gmail.com, vfhcheung@gmail.com, victorxue007@gmail.com, vircheng@gmail.com, vitoiv4@gmail.com, whurley@g.ucla.edu, williamkawaichoi@yahoo.com, willie.wu17@gmail.com, yoonsung14@ucla.edu, officers@vmailbox
 emcc@tbp.seas.ucla.edu	educ.outreach@tbp.seas.ucla.edu, ucla.tbp@gmail.com
 simran@tbp.seas.ucla.edu	simi.r2012@gmail.com
 ameet.braganza@tbp.seas.ucla.edu	aabraganza@gmail.com
 vincent.cheung@tbp.seas.ucla.edu	vfhcheung@gmail.com
 jonathan.lee@tbp.seas.ucla.edu	yoonsung14@ucla.edu
 sahil.gandhi@tbp.seas.ucla.edu	sahilmgandhi@gmail.com
-member.coord@tbp.seas.ucla.edu	jgorder@ucla.edu, mchen2918@gmail.com, president@tbp.seas.ucla.edu, simi.r2012@gmail.com, ucla.tbp@gmail.com
+member.coord@tbp.seas.ucla.edu	jgorder@ucla.edu, mchen2918@gmail.com, president@tbp.seas.ucla.edu, simi.r2012@gmail.com, ucla.tbp@gmail.com, member.coord@vmailbox
 sohni@tbp.seas.ucla.edu	sohni.thakkar@gmail.com
 ramya.satish@tbp.seas.ucla.edu	ramyasatish1997@gmail.com
 kianjer.koh@tbp.seas.ucla.edu	kohkj8895@gmail.com
@@ -82,7 +82,7 @@ jason.yee@tbp.seas.ucla.edu	jasonyee@g.ucla.edu
 epsilon.house@tbp.seas.ucla.edu	13arashirotroy@gmail.com, Rbdall@ucla.edu, Rfang@ucla.edu, W.h.liaoyiyuan@gmail.com, adman892@ucla.edu, aluu2012@gmail.com, benjmor@ucla.edu, branpyhsiao@ucla.edu, cheukyu93@gmail.com, chingyim@ucla.edu, connorhum@ucla.edu, david.g.khachatrian@ucla.edu, davidtorosyan@ucla.edu, denon8wong@gmail.com, derrick.chu@ucla.edu, gogo5860@ucla.edu, guanzeyi@g.ucla.edu, hannah.j@live.com, jgorder@ucla.edu, kcsakamoto3515@ucla.edu, kimchyu@ucla.edu, kschweidel@ucla.edu, kwchui@g.ucla.edu, lukechiang@ucla.edu, marktai@ucla.edu, pchutinuntanakul1@gmail.com, president@tbp.seas.ucla.edu, rsandzimier@gmail.com, saftab127@gmail.com, skhemka@ucla.edu, timstickles@cox.net, timtotheroyer@ucla.edu, ttrinh1994@gmail.com, ucla.tbp@gmail.com, xtine15@verizon.net, yuxuanli@ucla.edu, zfc1992@hotmail.com, zhuolivia@gmail.com
 manav.maroli@tbp.seas.ucla.edu	mmaroli@ucla.edu
 beta.house@tbp.seas.ucla.edu	aambrosiomeir@gmail.com, adrianspl@ucla.edu, aiaechel@gmail.com, alexanderberry93@gmail.com, bartuerdemli@hotmail.com, billding1130@ucla.edu, bongoathenahuang@gmail.com, brianclui@g.ucla.edu, charlessheung@gmail.com, chinmay.bhoot@yahoo.com, christianhalvorsen95@gmail.com, corydesautels@gmail.com, edwardwbarber@gmail.com, ekcheng@ucla.edu, georgecha@ucla.edu, harrynam@ucla.edu, heliang5@ucla.edu, hyeinlee94@ucla.edu, iyerkriti@gmail.com, jmassachi@ucla.edu, justinong@ucla.edu, khoinguyen1518@g.ucla.edu, lakshmipathyarjun6@gmail.com, lamangela@ucla.edu, ntfschr@gmail.com, patelsagar72@gmail.com, phuochaintran@gmail.com, phwoytowitz@gmail.com, president@tbp.seas.ucla.edu, queeniema@ucla.edu, robbybparker@gmail.com, rtcothern@gmail.com, samzp@g.ucla.edu, smakey18@gmail.com, sonnelala@ucla.edu, ucla.tbp@gmail.com, victor24yu@ucla.edu, wenyupeng@ucla.edu, wsitu93@ucla.edu, zachyee@ucla.edu, zoe.xi@ucla.edu
-tutoring@tbp.seas.ucla.edu	aabraganza@gmail.com, harshsrivastav0@gmail.com, imh2015@g.ucla.edu, mark@tbp.seas.ucla.edu, niejingjing@g.ucla.edu, president@tbp.seas.ucla.edu, ucla.tbp@gmail.com
+tutoring@tbp.seas.ucla.edu	aabraganza@gmail.com, harshsrivastav0@gmail.com, imh2015@g.ucla.edu, mark@tbp.seas.ucla.edu, niejingjing@g.ucla.edu, president@tbp.seas.ucla.edu, ucla.tbp@gmail.com, tutoring@vmailbox
 kianjer@tbp.seas.ucla.edu	kohkj8895@gmail.com
 hansen.qiu@tbp.seas.ucla.edu	hanqiu8@gmail.com
 house.leaders@tbp.seas.ucla.edu	beta.leaders@tbp.seas.ucla.edu, epsilon.leaders@tbp.seas.ucla.edu, member.coord@tbp.seas.ucla.edu, pi.leaders@tbp.seas.ucla.edu, tau.leaders@tbp.seas.ucla.edu, ucla.tbp@gmail.com
@@ -96,7 +96,7 @@ linus@tbp.seas.ucla.edu	U6.30cl@gmail.com
 kushal@tbp.seas.ucla.edu	kushalnimkar@gmail.com
 victor.xue@tbp.seas.ucla.edu	victorxue007@gmail.com
 postmaster@tbp.seas.ucla.edu	ucla.tbp@gmail.com, webmaster@tbp.seas.ucla.edu
-corporate@tbp.seas.ucla.edu	amangosong@ucla.edu, andrewnamgoong105@gmail.com, johnny@tbp.seas.ucla.edu, president@tbp.seas.ucla.edu, ucla.tbp@gmail.com, willie.wu17@gmail.com
+corporate@tbp.seas.ucla.edu	amangosong@ucla.edu, andrewnamgoong105@gmail.com, johnny@tbp.seas.ucla.edu, president@tbp.seas.ucla.edu, ucla.tbp@gmail.com, willie.wu17@gmail.com, corporate@vmailbox
 david.carrillo@tbp.seas.ucla.edu	davidcarrillo1217@gmail.com
 vinya@tbp.seas.ucla.edu	bhuvan.vinya@gmail.com
 john@tbp.seas.ucla.edu	jgorder@ucla.edu
@@ -115,7 +115,7 @@ beta.candidates@tbp.seas.ucla.edu	beta.leaders@tbp.seas.ucla.edu, president@tbp.
 max.zhu@tbp.seas.ucla.edu	mzhu2.4@gmail.com
 daniel@tbp.seas.ucla.edu	dgfong@sbcglobal.net
 omar.ozgur@tbp.seas.ucla.edu	oozgur217@gmail.com
-secretary@tbp.seas.ucla.edu	christopher.chen@aut.com, connorhum@ucla.edu, president@tbp.seas.ucla.edu, ucla.tbp@gmail.com
+secretary@tbp.seas.ucla.edu	christopher.chen@aut.com, connorhum@ucla.edu, president@tbp.seas.ucla.edu, ucla.tbp@gmail.com, secretary@vmailbox
 connor.kenny@tbp.seas.ucla.edu	ckenny9739@ucla.edu
 ramya@tbp.seas.ucla.edu	ramyasatish1997@gmail.com
 brian.lui@tbp.seas.ucla.edu	brianclui@g.ucla.edu
@@ -125,9 +125,9 @@ jahan.kuruvillacherian@tbp.seas.ucla.edu	jcherian@g.ucla.edu
 simi@tbp.seas.ucla.edu	simi.r2012@gmail.com
 john.gorder@tbp.seas.ucla.edu	jgorder@ucla.edu
 sidney@tbp.seas.ucla.edu	treycrossley@gmail.com
-social@tbp.seas.ucla.edu	U6.30cl@gmail.com, mark@tbp.seas.ucla.edu, mzhu2.4@gmail.com, president@tbp.seas.ucla.edu, treycrossley@gmail.com, ucla.tbp@gmail.com
+social@tbp.seas.ucla.edu	U6.30cl@gmail.com, mark@tbp.seas.ucla.edu, mzhu2.4@gmail.com, president@tbp.seas.ucla.edu, treycrossley@gmail.com, ucla.tbp@gmail.com, social@vmailbox
 david@tbp.seas.ucla.edu	davidcarrillo1217@gmail.com
-president@tbp.seas.ucla.edu	brianclui@g.ucla.edu, ucla.tbp@gmail.com
+president@tbp.seas.ucla.edu	brianclui@g.ucla.edu, ucla.tbp@gmail.com, president@vmailbox
 xiang.chen@tbp.seas.ucla.edu	allanchen@ucla.edu
 ameet@tbp.seas.ucla.edu	aabraganza@gmail.com
 linus.chen@tbp.seas.ucla.edu	U6.30cl@gmail.com
