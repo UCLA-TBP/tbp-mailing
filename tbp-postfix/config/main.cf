@@ -7,7 +7,7 @@
 #myorigin = /etc/mailname
 myhostname = tbp.seas.ucla.edu
 mydomain = tbp.seas.ucla.edu
-myorigin = $myhostname
+myorigin = $mydomain
 
 smtpd_banner = $myhostname ESMTP $mail_name
 biff = no
@@ -17,6 +17,14 @@ relayhost =
 # appending .domain is the MUA's job.
 append_dot_mydomain = no
 
+#virtual mailboxes
+virtual_mailbox_domains = vmailbox
+virtual_mailbox_base = /var/mail/vhosts
+virtual_mailbox_maps = hash:/etc/postfix/vmailbox
+virtual_uid_maps = static:100
+virtual_gid_maps = static:101
+
+#virtual aliases
 virtual_alias_domains = tbp.seas.ucla.edu
 virtual_alias_maps = hash:/etc/postfix/virtual
 
