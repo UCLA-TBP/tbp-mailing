@@ -17,5 +17,7 @@ clear:
 
 rebuild: clean build run
 	
-update_email_aliases:
-	python $(mkfile_dir)tbp-postfix/update_email_aliases.py
+update_virtual_domains: 
+	sh migrate_confs.sh
+#update_email_aliases:
+#	python $(mkfile_dir)tbp-postfix/update_email_aliases.py

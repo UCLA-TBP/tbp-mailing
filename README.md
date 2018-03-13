@@ -19,7 +19,8 @@ TBP Mailing comes with a Makefile with the following commands:
   * `make clean`: Stops and removes the relevant containers
   * `make clear`: Removes the relevant containers, networks, and volumes (stored mail and logs)
 	* `make rebuild`: Runs make clean, build, and run. Effectively creates images with the current configurations of `config`. Run this after modifying `config` or updating postfix domains.
-  * `make update_email_aliases`: Updates the virtual email domains used by postfix (the containers need to be restarted for this to take effect; postmapping and reloading postfix within the container could also work). This is currently not functional. Run a script from the backend container and move the output files to `config` before a `make rebuild`.
+	* `make update_virtual_domains`: Move virtual domain configs from a specified location to the `tbp-postfix/config` directory. The `migrate_confs.sh` scripts should be edited before running this command. A `make rebuild should be run afterwards for the changes to take effect.
+  ~~* `make update_email_aliases`: Updates the virtual email domains used by postfix (the containers need to be restarted for this to take effect; postmapping and reloading postfix within the container could also work). This is currently not functional. Run a script from the backend container and move the output files to `config` before a `make rebuild`.~~
   
 ## Config
 
