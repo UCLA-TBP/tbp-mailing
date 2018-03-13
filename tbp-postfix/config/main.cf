@@ -8,6 +8,7 @@
 myhostname = tbp.seas.ucla.edu
 mydomain = tbp.seas.ucla.edu
 myorigin = $mydomain
+mydestination = localhost.$mydomain, localhost
 
 smtpd_banner = $myhostname ESMTP $mail_name
 biff = no
@@ -61,6 +62,10 @@ smtpd_sasl_local_domain = $myhostname
 smtpd_sasl_path = private/auth
 smtpd_sasl_security_options = noanonymous
 smtpd_sasl_type = dovecot
+
+# TLS Support
+smtp_tls_CApath = /etc/ssl/certs
+smtpd_tls_CApath = /etc/ssl/certs
 
 # Compatibility Mode
 compatibility_level = 2

@@ -4,6 +4,10 @@
 touch /var/log/postfix.info /var/log/postfix.warning /var/log/postfix.err /var/log/postfix.crit
 syslogd
 
+#tls support
+postfix tls enable-client
+postfix tls enable-server
+
 #set up chroot environment
 PFROOT=/var/spool/postfix
 mkdir -p $PFROOT/etc

@@ -1,2 +1,3 @@
 example@example.com:{PLAIN}passwd
 other@other.com:{CRYPT}passwd2
+other@other2.com:{BLF-CRYPT}passwd3

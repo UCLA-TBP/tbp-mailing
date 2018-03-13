@@ -3,7 +3,7 @@ FROM alpine
 EXPOSE 25
 
 RUN apk update
-RUN apk add postfix
+RUN apk add postfix openssl
 
 COPY config /etc/postfix
 COPY syslog.conf /etc/syslog.conf
