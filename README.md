@@ -18,7 +18,8 @@ TBP Mailing comes with a Makefile with the following commands:
   * `make stop`: Stops the relevant containers
   * `make clean`: Stops and removes the relevant containers
   * `make clear`: Removes the relevant containers, networks, and volumes (stored mail and logs)
-  * `make update_email_aliases`: Updates the virtual email aliases used by postfix (the containers need to be restarted for this to take effect; postmapping and reloading postfix within the container could also work)
+	* `make rebuild`: Runs make clean, build, and run. Effectively creates images with the current configurations of `config`. Run this after modifying `config` or updating postfix domains.
+  * `make update_email_aliases`: Updates the virtual email domains used by postfix (the containers need to be restarted for this to take effect; postmapping and reloading postfix within the container could also work). This is currently not functional. Run a script from the backend container and move the output files to `config` before a `make rebuild`.
   
 ## Config
 
@@ -34,7 +35,7 @@ TBP Mailing uses syslog to log for both postfix and docker, with the logs stored
 
 ## Virtual Mailboxes
 
-Mail can be delivered locally by altering the `vmailbox` file of postfix (which is postmapped on the start of the container). Within this file, mail sent to the address on the left side is sent to the mailbox name on the right side. Mail is routed to the virtual mailbox address through virtual aliases (aka the `virtual` file). Updating the email aliases with the make command or the `update_email_aliases` script should be enough to make this work. 
+Mail can be delivered locally by altering the `vmailbox` file of postfix (which is postmapped on the start of the container). Within this file, mail sent to the address on the left side is sent to the mailbox name on the right side. Mail is routed to the virtual mailbox address through virtual aliases (aka the `virtual` file). 
 
 Mail is currently delivered to `/var/mail/vhosts/{mailbox name}`. This location can be changed in `main.cf`. 
 

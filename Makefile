@@ -15,5 +15,7 @@ clean: stop
 clear:
 	docker-compose down -v
 
+rebuild: clean build run
+	
 update_email_aliases:
 	python $(mkfile_dir)tbp-postfix/update_email_aliases.py
