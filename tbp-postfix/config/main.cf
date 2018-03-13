@@ -5,8 +5,8 @@
 # line of that file to be used as the name.  The Debian default
 # is /etc/mailname.
 #myorigin = /etc/mailname
-myhostname = tbp.seas.ucla.edu
-mydomain = tbp.seas.ucla.edu
+myhostname = tbp.marktai.com
+mydomain = tbp.marktai.com
 myorigin = $mydomain
 mydestination = localhost.$mydomain, localhost
 
@@ -26,7 +26,7 @@ virtual_uid_maps = static:100
 virtual_gid_maps = static:101
 
 #virtual aliases
-virtual_alias_domains = tbp.seas.ucla.edu
+virtual_alias_domains = tbp.marktai.com tbp.seas.ucla.edu
 virtual_alias_maps = hash:/etc/postfix/virtual
 
 # Restriction classes
