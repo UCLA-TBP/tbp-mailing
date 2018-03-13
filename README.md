@@ -3,7 +3,7 @@
 This is a dockerized mailing server with the configs set for TBP. Currently, it has the following components:
 
   * Postfix (MTA)
-  * Docker  (SASL)
+  * Dovecot  (SASL)
   
 These components run in containers of Alpine Linux. Interacting with a container can be accomplished through `docker exec` commands or `docker attach` to enter a shell.
   
