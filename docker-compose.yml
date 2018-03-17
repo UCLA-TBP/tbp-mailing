@@ -7,7 +7,7 @@ services:
     stdin_open: true
     tty: true
     volumes:
-     - docker-logs:/var/log
+     - ./tbp-dovecot/log:/var/log
      - postfix-spool:/var/spool/postfix
   postfix:
     build: ./tbp-postfix
@@ -18,11 +18,8 @@ services:
     stdin_open: true
     tty: true
     volumes:
-     - postfix-mail:/var/mail
+     - ./tbp-postfix/mail:/var/mail
      - postfix-spool:/var/spool/postfix
-     - postfix-logs:/var/log
+     - ./tbp-postfix/log:/var/log
 volumes:
-  docker-logs:
   postfix-spool:
-  postfix-mail:
-  postfix-logs:

@@ -1,12 +1,12 @@
 #!/bin/sh
 
-#set up logging support 
-touch /var/log/postfix.info /var/log/postfix.warning /var/log/postfix.err /var/log/postfix.crit
-syslogd
-
 #tls support
 postfix tls enable-client
 postfix tls enable-server
+
+#set up logging support
+touch /var/log/postfix.info /var/log/postfix.warning /var/log/postfix.err /var/log/postfix.crit
+syslogd
 
 #set up chroot environment
 PFROOT=/var/spool/postfix
