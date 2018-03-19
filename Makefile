@@ -12,7 +12,7 @@ stop:
 	docker-compose kill
   
 clean: stop
-	docker-compose rm
+	docker-compose rm -f
 	
 clear:
 	docker-compose down -v
