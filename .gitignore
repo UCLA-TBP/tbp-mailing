@@ -8,3 +8,5 @@ tbp-postfix/config/virtual
 tbp-postfix/config/vmailbox
 tbp-postfix/config/restrict_classes/tbponly
 tbp-postfix/config/restrict_classes/houseleaders
+
+tbp-postfix/update_virtual_conf/virtual_static

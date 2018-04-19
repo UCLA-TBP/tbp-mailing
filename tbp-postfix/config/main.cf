@@ -5,8 +5,8 @@
 # line of that file to be used as the name.  The Debian default
 # is /etc/mailname.
 #myorigin = /etc/mailname
-myhostname = tbp.marktai.com
-mydomain = tbp.marktai.com
+myhostname = tbp.seas.ucla.edu
+mydomain = tbp.seas.ucla.edu
 myorigin = $mydomain
 mydestination = localhost.$mydomain, localhost
 
