@@ -1,1 +1,13 @@
-#tbp-dovecot/config/users
+tbp-dovecot/config/users
+tbp-dovecot/log
+
+tbp-postfix/log
+tbp-postfix/mail
+
+tbp-postfix/config/sender_bcc
+tbp-postfix/config/virtual
+tbp-postfix/config/vmailbox
+tbp-postfix/config/restrict_classes/tbponly
+tbp-postfix/config/restrict_classes/houseleaders
+
+tbp-postfix/update_virtual_conf/virtual_static
