@@ -28,6 +28,7 @@ postmap /etc/postfix/vmailbox
 postmap /etc/postfix/restrict_classes/tbponly
 postmap /etc/postfix/restrict_classes/houseleaders
 postmap /etc/postfix/access_restrictions
+postmap /etc/postfix/sender_bcc
 newaliases
 
 postfix start

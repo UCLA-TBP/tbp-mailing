@@ -29,6 +29,9 @@ virtual_gid_maps = static:101
 virtual_alias_domains = tbp.marktai.com tbp.seas.ucla.edu
 virtual_alias_maps = hash:/etc/postfix/virtual
 
+#automatic bcc to aliases
+sender_bcc_maps = hash:/etc/postfix/sender_bcc
+
 # Restriction classes
 smtpd_restriction_classes = tbponly, houseleaders, tbpandhouseleaders
 

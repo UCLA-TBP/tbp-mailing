@@ -1,6 +1,6 @@
 mkfile_dir := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
-backend := $(shell cd /opt/tbpsite; docker-compose ps -q backend)
-postfix := $(shell docker-compose ps -q postfix)
+backend := $(shell cd /opt/tbpsite 2> /dev/null; docker-compose ps -q backend 2> /dev/null)
+postfix := $(shell docker-compose ps -q postfix 2> /dev/null)
 
 build:
 	docker-compose build
@@ -27,6 +27,7 @@ update_virtual_domains:
 	docker cp $(backend):/etc/postfix_conf/vmailbox $(mkfile_dir)tbp-postfix/config/vmailbox
 	docker cp $(backend):/etc/postfix_conf/restrict_classes/tbponly $(mkfile_dir)tbp-postfix/config/restrict_classes/tbponly
 	docker cp $(backend):/etc/postfix_conf/restrict_classes/houseleaders $(mkfile_dir)tbp-postfix/config/restrict_classes/houseleaders
+	docker-compose exec postfix postfix reload
 	
 update: update_virtual_domains rebuild
 
