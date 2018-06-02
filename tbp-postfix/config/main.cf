@@ -25,6 +25,9 @@ virtual_mailbox_maps = hash:/etc/postfix/vmailbox
 virtual_uid_maps = static:100
 virtual_gid_maps = static:101
 
+#virtual mailbox size
+virtual_mailbox_limit = 0
+
 #virtual aliases
 virtual_alias_domains = tbp.marktai.com tbp.seas.ucla.edu
 virtual_alias_maps = hash:/etc/postfix/virtual
