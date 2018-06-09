@@ -73,5 +73,8 @@ smtpd_sasl_type = dovecot
 smtp_tls_CApath = /etc/ssl/certs
 smtpd_tls_CApath = /etc/ssl/certs
 
+#Inet protocols
+inet_protocols = ipv4
+
 # Compatibility Mode
 compatibility_level = 2
