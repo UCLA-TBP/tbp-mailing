@@ -18,6 +18,9 @@ relayhost =
 # appending .domain is the MUA's job.
 append_dot_mydomain = no
 
+#set max message size to 25 MB
+message_size_limit = 25600000
+
 #virtual mailboxes
 virtual_mailbox_domains = vmailbox
 virtual_mailbox_base = /var/mail/vhosts
