@@ -121,7 +121,7 @@ for alias, targets in aliases.items():
     aliasStr += '%s\t%s%s\n' % ( alias, ', '.join(sorted(filter(lambda x: x.strip(' '), targets))), ', ' + vmail_addr)
 
     box_name = alias.replace('@tbp.seas.ucla.edu', '')
-    vmail_str += '%s\t%s\n' % (vmail_addr, box_name)
+    vmail_str += '%s\t%s/\n' % (vmail_addr, box_name)
 
 # Commit aliases to virtual file
 with open( '/etc/postfix_conf/virtual', 'w+' ) as f:

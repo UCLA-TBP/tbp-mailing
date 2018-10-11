@@ -18,12 +18,18 @@ relayhost =
 # appending .domain is the MUA's job.
 append_dot_mydomain = no
 
+#set max message size to 25 MB
+message_size_limit = 25600000
+
 #virtual mailboxes
 virtual_mailbox_domains = vmailbox
 virtual_mailbox_base = /var/mail/vhosts
 virtual_mailbox_maps = hash:/etc/postfix/vmailbox
 virtual_uid_maps = static:100
 virtual_gid_maps = static:101
+
+#virtual mailbox size
+virtual_mailbox_limit = 0
 
 #virtual aliases
 virtual_alias_domains = tbp.marktai.com tbp.seas.ucla.edu
@@ -69,6 +75,9 @@ smtpd_sasl_type = dovecot
 # TLS Support
 smtp_tls_CApath = /etc/ssl/certs
 smtpd_tls_CApath = /etc/ssl/certs
+
+#Inet protocols
+inet_protocols = ipv4
 
 # Compatibility Mode
 compatibility_level = 2

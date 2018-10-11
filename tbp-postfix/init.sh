@@ -20,7 +20,8 @@ chown root:root $PFROOT/pid
 #set up virtual mailboxes
 VMAIL=/var/mail/vhosts
 mkdir -p $VMAIL
-chown -R postfix:postfix $VMAIL
+chown -R postfix:postfix $VMAIL/..
+chmod -R u+rwx $VMAIL/..
 
 #create postfix databases
 postmap /etc/postfix/virtual
